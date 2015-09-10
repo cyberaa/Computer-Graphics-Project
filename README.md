@@ -1,6 +1,19 @@
 # Computer-Graphics-Project
 Tic-Tac-Toe - Computer Graphics Project - CG Subject.
 
+Description
+-----------------
+This is a Computer Graphics Project where we have created a house to be explored by the user, with a lot of functionalities like lightning, dynamic objects, rain, smog and others; while also being able to participate in a particular Tic-Tac-Toe game for 2 players. This project was created using C++ with OpenGL.
+
+Technical Summary
+-----------------
+ - Programming Language
+    - C++
+
+ - Libraries
+    - OpenGL
+
+
 Screenshots
 ----------------
 
