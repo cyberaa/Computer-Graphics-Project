@@ -1,0 +1,396 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fswiss\fcharset0 Arial-Black;
+\f3\fnil\fcharset0 Apple-Chancery;\f4\fswiss\fcharset0 Helvetica;\f5\fnil\fcharset0 Calibri;
+\f6\fnil\fcharset0 FootlightMTLight;\f7\fnil\fcharset0 TrebuchetMS;}
+{\colortbl;\red255\green255\blue255;\red153\green204\blue255;\red23\green54\blue93;\red191\green191\blue191;
+}
+{\info
+{\author magusamurai}}\vieww25400\viewh13660\viewkind0
+\deftab720
+\pard\pardeftab720\li405\pardirnatural
+
+\f0\fs20 \cf0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\f1\fs24 \cf0 \
+\
+\pard\pardeftab720\li405\pardirnatural
+
+\f2\b\fs36 \cf0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\fs20 \cf0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\f3\i\b0\fs28 \cf0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\fs36 \cf0 \
+2012/2013\
+\pard\pardeftab720\li405\pardirnatural
+
+\fs24 \cf0 	\
+\
+\pard\pardeftab720\li405\pardirnatural
+\cf2 Computa\'e7\'e3o Gr\'e1fica \
+\pard\pardeftab720\li405\pardirnatural
+
+\fs28 \cf0 \
+    Relat\'f3rio Final\
+\pard\pardeftab720\li405\pardirnatural
+
+\fs24 \cf0     \
+\pard\pardeftab720\li405\pardirnatural\qc
+
+\fs28 \cf0 Jogo do Galo\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\qc
+
+\f4\i0\fs24 \cf0 {{\NeXTGraphic Voila_Capture97.png \width15920 \height11340
+}¬}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\qc
+
+\f3\i \cf0 \
+\pard\pardeftab720\li405\pardirnatural\qj
+\cf0 \
+\pard\pardeftab720\li405\pardirnatural\qr
+\cf0 \
+\
+\
+\
+\
+\pard\pardeftab720\li405\pardirnatural\qc
+\cf0 Trabalho elaborado por:  \
+\pard\pardeftab720\li405\pardirnatural\qr
+\cf0 \
+\pard\pardeftab720\li405\pardirnatural\qc
+\cf0      	\
+\pard\pardeftab720\pardirnatural\qc
+
+\fs22 \cf0 \
+\pard\pardeftab720\li405\pardirnatural\qc
+\cf0 Iris Sofia Viegas Paquete de Sousa  \'96 iris@student.dei.uc.pt \'96 2008117860\
+\pard\pardeftab720\pardirnatural\qc
+\cf0 Jo\'e3o Miguel Rodrigues Jesus \'96 jjesus@student.dei.uc.pt- 2008111667\
+\
+\pard\pardeftab720\li405\pardirnatural\qc
+
+\f5\i0 \cf0 80 Horas\
+\pard\pardeftab720\li405\sa300\pardirnatural
+
+\f6\fs52 \cf3 \
+\
+\
+\pard\pardeftab720\li405\pardirnatural
+
+\fs24 \cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\li405\sa300\pardirnatural
+
+\fs52 \cf3 \kerning1\expnd1\expndtw5
+Introdu\'e7\'e3o\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\f5\fs24 \cf0 \
+\pard\pardeftab720\li405\pardirnatural\qj
+\cf0 	O nosso projecto visa desenvolver o jogo do galo.N\'f3s entretanto optamos por faz\'ea-lo num cen\'e1rio diferente. Criamos um cen\'e1rio simulando uma sala, onde podemos encontrar quadros nas paredes, duas cadeiras e uma mesa. Em cada cadeira temos um jogador virado para mesa central. Estes est\'e3o a jogar o jogo do galo (objectivo do jogo). \
+Neste trabalho tivemos como suporte as bibliotecas GLU  e GLUT do openGL, mas tamb\'e9m importamos alguns modelos do Blend.\
+O trabalho foi realizado no ambiente Linux e MacOs, pertencentes a cada elemento do grupo.\
+\pard\pardeftab720\li405\pardirnatural
+
+\f1 \cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\li405\sa300\pardirnatural
+
+\f6\fs52 \cf3 \kerning1\expnd1\expndtw5
+Funcionalidades Implementadas\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\f5\fs24 \cf0 \
+\pard\pardeftab720\li405\pardirnatural
+
+\f7 \cf0 	Em seguida apresentamos uma tabela especificando algumas das funcionalidades implementadas para a concretiza\'e7\'e3o do nosso projecto.\
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\pardirnatural\qc
+
+\b \cf0 Funcionalidade
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\pardirnatural\qc
+
+\b \cf0 Implementada
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\pardirnatural\qc
+
+\b \cf0 Condi\'e7\'f5es/instru\'e7\'f5es para testar 
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural\qc
+
+\b \cf0 Problemas identificados relativamente a essa funcionalidade
+\b0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Movimenta\'e7\'e3o do Obsrvador\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Carregar nas setas Up/Down para andar  para frente ou tr\'e1s e setas Left/Right para virar\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Criar um movimento realista.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Detec\'e7\'e3o de Colis\'f5es\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 O observador n\'e3o pode sair de dentro do angar\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Passar de dia para noite\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Carregar na tecla \'93n/N\'94 e com nevoeiro\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \
+Chuva a cair\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Carregar na tecla \'93c/C\'94 para parar ou come\'e7ar\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Ilumina\'e7\'e3o local\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 So pode ligar quando mudar para noite.\
+Teclas \'93t/t\'94 e \'93f/F\'94\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Fazer com que as luzes incidissem sobre os nossos objectos e criasse um efeito realista\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\pardirnatural
+\cf0 Transpar\'eancia\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% Implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Aplicada na porta de vidro lateral\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Nevoeiro\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 S\'f3 aparece quando est\'e1 de noite\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Arvores\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100% implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Objectos importados do Blend\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Colocar cor nos objectos, v\'ea-los atrav\'e9s da porta transparente, importar v\'e1rios elementos.\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Quadros\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 100%implementada\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 Ao clicar a letra \'93m\'94 vai mudando as imagens apresentadas.\cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf4 \clbrdrl\brdrs\brdrw20\brdrcf4 \clbrdrb\brdrs\brdrw20\brdrcf4 \clbrdrr\brdrs\brdrw20\brdrcf4 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\li405\pardirnatural
+\cf0 \cell \lastrow\row
+\pard\pardeftab720\sa300\pardirnatural
+
+\f6\fs52 \cf3 \
+\pard\pardeftab720\pardirnatural
+
+\fs24 \cf0 \
+\pard\pardeftab720\sa300\pardirnatural
+
+\fs52 \cf3 \kerning1\expnd1\expndtw5
+Estrutura Interna\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\pardirnatural
+
+\f5\fs24 \cf0 \
+\pard\pardeftab720\pardirnatural\qj
+
+\f6 \cf0 O cen\'e1rio foi constru\'eddo nas seguintes condi\'e7\'f5es:\
+1. Eixo do Y apontado para cima(parte positiva)\
+2. Eixo do X na horizontal (parte negativa)\
+3. Eixo do Z na localiza\'e7\'e3o normal (parte negativa e positiva)\
+\
+O comprimento da sala \'e9 controlado pelo eixo do Z, a largura pelo eixo X e a altura pelo Y.\
+\
+A \'fanica projec\'e7\'e3o usada pela aplica\'e7\'e3o foi a prespectiva, ao carregar a tecla \'93p\'94 o que muda s\'e3o apenas os  par\'e2metros do lookAt.\
+\pard\pardeftab720\pardirnatural
+\cf0 \
+\
+\
+\pard\pardeftab720\sa300\pardirnatural
+
+\fs52 \cf3 \kerning1\expnd1\expndtw5
+Estrutura/Design\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\li405\pardirnatural\qj
+
+\f5\fs24 \cf0 O \'93Aeroporto\'94 est\'e1 dividido 3 ficheiros importantes \
+\
+\pard\pardeftab720\li405\pardirnatural\qj
+
+\b \cf0 cena.cpp : 
+\b0 Este \'e9 o ficheiro principal, onde temos o main, onde \'e9 desenhado toda a cena, e atualiza\'e7\'f5es efectuadas no cen\'e1rio, ou seja o motor da aplica\'e7\'e3o\
+
+\b cena.h:
+\b0 Este ficheiro cont\'e9m todas as fun\'e7\'f5es e variav\'e9s utilizadas por todas os outros ficheiros.\
+
+\b drawObjects.cpp: 
+\b0 Neste ficheiro temos a parte da constru\'e7\'e3o da maioria dos objectos utilizados, como a cria\'e7\'e3o de texturas, incializa\'e7\'e3o das gotas de chuva,ilumina\'e7\'e3o, update da vis\'e3o, nevoeiro.\
+
+\b boneco.cpp: 
+\b0 Neste ficheiro \'e9 criado as partes do boneco com auxilio de glutSolidSphere e gluCylinder.\
+
+\b glm.cpp/glm.h/.obj 
+\b0 s\'e3o todas as ferramentas utilizadas para importar modelos do blend para o openGl.\
+\pard\pardeftab720\li1416\fi-360\pardirnatural
+\cf0 \
+\
+\pard\pardeftab720\li1416\fi-360\pardirnatural
+
+\f6 \cf0 \
+\pard\pardeftab720\sa300\pardirnatural\qc
+
+\fs52 \cf3 \
+\pard\pardeftab720\sa300\pardirnatural\qc
+\cf3 \kerning1\expnd1\expndtw5
+Como funciona a aplica\'e7\'e3o\kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\li405\pardirnatural\qj
+
+\f5\fs24 \cf0 \
+\pard\pardeftab720\li405\pardirnatural\qj
+
+\f6 \cf0 		Depois de correr o programa, ele inicia com o observador dentro de uma sala, podendo-se movimentar em todo o espa\'e7o da sala mas n\'e3o pode sair.A sala tem uma porta lateral de vidro que est\'e1 \'93meio fechada\'94 de forma que se posso ver as \'e1rvores colocadas no exterior da casa. Caso o utilizador queira jogar, deve premir a tecla \'93p\'94  e em seguida a aplica\'e7\'e3o muda a visualiza\'e7\'e3o e c\'e2mera \'e9 colocado no cimo da mesa central, de modo a visualizar o tabuleiro e as suas respectivas pe\'e7as.Para jogar, basta seleccionar a posi\'e7\'e3o que deseja premindo os numeros entre 1 e 9, estando enumerado da esquerda para a direita (do utilizador). Caso um dos utilizadores ganhe \'e9 apresentada essa informa\'e7\'e3o contendo o numero o jogador em quest\'e3o. Caso empatem a informa\'e7\'e3o tamb\'e9m \'e9 exposta ao mesmos. Qualquer resultado (seja vit\'f3ria ou empate), o jogo s\'f3 recome\'e7ara se o utilizador assim o quiser; para tal \'e9 necess\'e1rio clicar a tecla \'93h\'94.\
+Ainda na sala, o utilizador pode mudar as imagens que se encontra nos quadros colocados na parede, tendo no conjunto 5 imagens. \
+Tamb\'e9m \'e9 poss\'edvel colocar nevoeiro no interior da sala e tamb\'e9m no exterior (muda do dia para a noite). No interior da casa, quando isso acontece podemos ligar a luz do tecto (premir tecla \'93t\'94) e um foco (premir tecla \'93f\'94). \
+No exterior da casa tem um espa\'e7o amplo contendo \'e1rvores, relva; e ainda existe a possibilidade de \'93fazer\'94 chover, premindo a tecla \'93c\'94.\
+\pard\pardeftab720\li405\pardirnatural
+\cf0 \
+\
+\
+\
+\
+\
+	\
+}

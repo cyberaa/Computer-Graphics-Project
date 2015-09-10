@@ -1,0 +1,1 @@
+g++ -Wall -L /System/Library/Frameworks -framework GLUT -framework OpenGL RgbImage.cpp cena.cpp -o teste

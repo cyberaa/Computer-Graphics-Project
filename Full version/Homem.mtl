@@ -1,0 +1,58 @@
+# Blender MTL File: 'FeelGoodComics_TomHanks.blend'
+# Material Count: 6
+
+newmtl tom_clothing
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.532059 0.413249 0.308346
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /media/disk/Arts/Caricatures/tom hanks/textures/tomhank_body.jpg
+
+newmtl tom_eyes
+Ns 341.176471
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 1.077548 1.077548 1.077548
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /media/disk/Arts/Caricatures/tom hanks/textures/tom_eyetexture.jpg
+
+newmtl tom_hair
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.118661 0.114188 0.114188
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl tom_shoes
+Ns 225.490196
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl tom_skinNode
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.751517 0.540132 0.497856
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl tom_teeth
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
