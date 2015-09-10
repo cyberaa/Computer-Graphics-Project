@@ -15,4 +15,8 @@ Screenshots
 <img style="margin:auto"src="https://github.com/cyberaa/Computer-Graphics-Project/blob/master/screenshots/8.png" width="200px">
 <img style="margin:auto"src="https://github.com/cyberaa/Computer-Graphics-Project/blob/master/screenshots/9.png" width="200px">
 <img style="margin:auto"src="https://github.com/cyberaa/Computer-Graphics-Project/blob/master/screenshots/10.png" width="200px">
+<img style="margin:auto"src="https://github.com/cyberaa/Computer-Graphics-Project/blob/master/screenshots/11.png" width="200px">
+<img style="margin:auto"src="https://github.com/cyberaa/Computer-Graphics-Project/blob/master/screenshots/12.png" width="200px">
+
+
 
